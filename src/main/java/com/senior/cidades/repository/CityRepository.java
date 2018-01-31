@@ -27,5 +27,8 @@ public interface CityRepository extends JpaRepository<City, Long> {
 
     int countDistinctByUfEquals(String uf);
 
+    @Query("select count(id) from City")
+    int countAll();
+
 
 }

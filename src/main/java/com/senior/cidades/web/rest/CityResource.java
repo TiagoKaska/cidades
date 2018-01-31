@@ -151,6 +151,12 @@ public class CityResource {
         return cityRepository.countDistinctByUfEquals(uf);
     }
 
+    @GetMapping("/cities/count/all")
+    public int getCountAll(){
+        log.debug("Rest get count all");
+        return  cityRepository.countAll();
+    }
+
 
 
     /**
