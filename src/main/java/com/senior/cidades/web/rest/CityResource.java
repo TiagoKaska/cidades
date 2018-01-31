@@ -140,6 +140,20 @@ public class CityResource {
     }
 
     /**
+     * GET  /cities/uf : get count cities from uf.
+     *
+     * @param uf
+     * * @return the ResponseEntity with status 200 (OK) and with body the city, or with status 404 (Not Found)
+     */
+    @GetMapping("/cities/count/{uf}")
+    public int getCountDistinctCitiesByUfEqual(@PathVariable("uf") String uf){
+        log.debug("Rest get city by uf :{}", uf);
+        return cityRepository.countDistinctByUfEquals(uf);
+    }
+
+
+
+    /**
      * DELETE  /cities/:id : delete the "id" city.
      *
      * @param id the id of the city to delete

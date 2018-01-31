@@ -25,5 +25,7 @@ public interface CityRepository extends JpaRepository<City, Long> {
     @Query("select c.name from City c where c.uf = :uf")
     List<String> selectNamesFromCityByUfEqual(@Param("uf") String uf);
 
+    int countDistinctByUfEquals(String uf);
+
 
 }

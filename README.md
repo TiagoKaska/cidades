@@ -3,12 +3,16 @@ This application was generated using JHipster 4.7.0, you can find documentation 
 
 
 #FUNCIONALIDADES
+
 1- Importar dados do CSV para a base. 
 
     src/main/resources/config/liquibase/changelog/20180130223531_added_entity_City.xml
 
 2 -  Retornar somente as cidades que são capitais ordenadas por nome.
 [http://localhost:8080/api/cities/capitals]()
+
+4 - Retornar a quantidade de cidades por estado;
+[http://localhost:8080/api/cities/count/SC]()
 
 5 -  Obter os dados da cidade informando o id do IBGE.
 [http://localhost:8080/api/cities/ibge/1200138]()
