@@ -10,6 +10,10 @@ This application was generated using JHipster 4.7.0, you can find documentation 
 2 -  Retornar somente as cidades que são capitais ordenadas por nome.
 [http://localhost:8080/api/cities/capitals]()
 
+5 -  Obter os dados da cidade informando o id do IBGE.
+[http://localhost:8080/api/cities/ibge/1200138]()
+
+
 ## Development
 
 To start your application in the dev profile, simply run:

@@ -113,6 +113,12 @@ public class CityResource {
         return cityRepository.findAllByCapitalTrueOrderByName();
     }
 
+    @GetMapping("/cities/ibge/{ibge}")
+    public ResponseEntity<City> getByIbgeEquals(@PathVariable Long ibge){
+        log.debug("Rest request get City ibgeId : {}", ibge);
+        City city = cityRepository.findCitiesByIbgeIdEquals(ibge);
+        return ResponseUtil.wrapOrNotFound(Optional.ofNullable(city));
+    }
 
 
     /**

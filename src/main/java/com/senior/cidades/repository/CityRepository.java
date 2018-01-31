@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.*;
 
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -16,5 +17,7 @@ import java.util.List;
 public interface CityRepository extends JpaRepository<City, Long> {
 
     List<City> findAllByCapitalTrueOrderByName();
+
+    City findCitiesByIbgeIdEquals(Long ibgeId);
 
 }
