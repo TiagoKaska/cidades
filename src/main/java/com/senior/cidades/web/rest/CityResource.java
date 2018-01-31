@@ -102,6 +102,20 @@ public class CityResource {
     }
 
     /**
+     * GET  /cities/capitais : get the capitais city.
+     *
+     * * @return the ResponseEntity with status 200 (OK) and with body the city, or with status 404 (Not Found)
+     */
+    @GetMapping("/cities/capitals")
+    public List<City> getAllCapitais()
+    {
+        log.debug("REST request Cities that are capitals");
+        return cityRepository.findAllByCapitalTrueOrderByName();
+    }
+
+
+
+    /**
      * DELETE  /cities/:id : delete the "id" city.
      *
      * @param id the id of the city to delete
