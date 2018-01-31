@@ -13,6 +13,10 @@ This application was generated using JHipster 4.7.0, you can find documentation 
 5 -  Obter os dados da cidade informando o id do IBGE.
 [http://localhost:8080/api/cities/ibge/1200138]()
 
+6 -  Retornar o nome das cidades baseado em um estado selecionado;
+[http://localhost:8080/api/cities/uf/RS]()
+
+
 
 ## Development
 
