@@ -20,6 +20,21 @@ GET [http://localhost:8080/api/cities/ibge/1200138]()
 6 -  Retornar o nome das cidades baseado em um estado selecionado;
 GET [http://localhost:8080/api/cities/uf/RS]()
 
+7 - Permitir adicionar uma nova Cidade.
+POST [http://localhost:8080/api/cities/]()
+ 
+ 
+     JSON {
+            "ibgeId": 8557, "name": 
+            "teste nova cidade2", 
+            "uf": "SC",
+            "capital": false,
+            "lon": -8388388,
+            "lat": -23434,
+            "noAcents": "noAcents",
+            "alternativeNames": "",
+            "microRegion": ""
+         }
 
 8 - Permitir deletar uma cidade;
 DELETE [http://localhost:8080/api/cities/1]()
