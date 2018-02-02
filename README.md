@@ -9,19 +9,24 @@ This application was generated using JHipster 4.7.0, you can find documentation 
     src/main/resources/config/liquibase/changelog/20180130223531_added_entity_City.xml
 
 2 -  Retornar somente as cidades que são capitais ordenadas por nome.
-GET [http://localhost:8080/api/cities/capitals]()
+
+    GET [http://localhost:8080/api/cities/capitals]()
 
 4 - Retornar a quantidade de cidades por estado;
-GET [http://localhost:8080/api/cities/count/SC]()
+
+    GET [http://localhost:8080/api/cities/count/SC]()
 
 5 -  Obter os dados da cidade informando o id do IBGE.
-GET [http://localhost:8080/api/cities/ibge/1200138]()
+
+    GET [http://localhost:8080/api/cities/ibge/1200138]()
 
 6 -  Retornar o nome das cidades baseado em um estado selecionado;
-GET [http://localhost:8080/api/cities/uf/RS]()
+    
+    GET [http://localhost:8080/api/cities/uf/RS]()
 
 7 - Permitir adicionar uma nova Cidade.
-POST [http://localhost:8080/api/cities/]()
+    
+    POST [http://localhost:8080/api/cities/]()
  
  
      JSON {
@@ -33,14 +38,18 @@ POST [http://localhost:8080/api/cities/]()
             "lat": -23434,
             "noAcents": "noAcents",
             "alternativeNames": "",
-            "microRegion": ""
+            "microRegion": "",
+            "mesoRegion": ""
          }
 
 8 - Permitir deletar uma cidade;
-DELETE [http://localhost:8080/api/cities/1]()
+    
+    DELETE [http://localhost:8080/api/cities/1]()
+    Passando o Id da cidade
 
 11- Retornar a quantidade de registros total;
-[http://localhost:8080/api/cities/count/all]()
+    
+    [http://localhost:8080/api/cities/count/all]()
 
 ## Development
 
